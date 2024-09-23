@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PM Aawas Yojna</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(https://i.pinimg.com/originals/89/06/b6/8906b6dcaaa78255d0ad67507487cae3.jpg);
+            background-position: center;
+            background-size: cover;
+            color: #fff;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 35px;
+            color: #ff7200;
+            margin-top: 20px;
+        }
+
+        .content {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .content h1 {
+            font-size: 50px;
+            letter-spacing: 2px;
+        }
+
+        .dynamic-text {
+            font-size: 18px;
+            margin-top: 30px;
+        }
+
+        .dynamic-text span {
+            color: #ff7200;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .feature {
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            margin: 10px;
+        }
+
+        .feature-icon {
+            font-size: 30px;
+            color: #ff7200;
+            margin-bottom: 10px;
+        }
+
+        .feature-title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .feature-description {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .form {
+            max-width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            margin-top: 40px;
+        }
+
+        .form h2 {
+            font-size: 22px;
+            color: #ff7200;
+            margin-bottom: 20px;
+        }
+
+        .form input {
+            width: 100%;
+            height: 35px;
+            margin-top: 10px;
+            padding: 5px;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #ff7200;
+            color: #fff;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+
+        .form button {
+            width: 100%;
+            height: 40px;
+            margin-top: 20px;
+            background: #ff7200;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.4s ease;
+        }
+
+        .form button:hover {
+            background: #fff;
+            color: #ff7200;
+        }
+
+        .form a {
+            text-decoration: none;
+            color: #ff7200;
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .main {
+                padding: 10px;
+            }
+
+            .content {
+                margin-top: 20px;
+            }
+
+            .features {
+                justify-content: flex-start;
+            }
+
+            .feature {
+                width: 100%;
+                max-width: 400px;
+            }
+
+            .form {
+                margin-top: 20px;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="logo"><b>PM AAWAS YOJNA</b></div>
+        <div class="content">
+            <h1>PM AAWAS YOJNA<br><span>Making India</span><br>All Developed</h1>
+            <div class="dynamic-text">
+                <p>The scheme was first launched on 25 June 2015.<br>
+                The interest rate for the PMAY scheme starts at 6.50% p.a.<br>
+                and can be availed for a tenure of up to 20 years.<br>
+                The implementation period of the PMAY-Urban scheme<br>
+                has been extended until 31 December 2024.</p>
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-home"></i></div>
+                    <div class="feature-title">Affordable Housing</div>
+                    <div class="feature-description">Get access to affordable housing options with low-interest rates, making homeownership more achievable.</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div class="feature-title">Secure Investments</div>
+                    <div class="feature-description">Invest in your future with confidence, knowing that PM AAWAS YOJNA offers secure and reliable investment opportunities.</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-users"></i></div>
+                    <div class="feature-title">Community Development</div>
+                    <div class="feature-description">Join a thriving community of individuals dedicated to building a better and more developed India.</div>
+                </div>
+            </div>
+        </div>
+        <form action="UserLogin" method="post">
+            <div class="form">
+                <h2>User Login</h2>
+                <input type="email" name="aemail" placeholder="Enter Email Here" required>
+                <input type="password" name="apass" placeholder="Enter Password Here" required>
+                <button type="submit">Login</button>
+                <a href="adminLogin.html">Login as Admin here</a>
+                <a href="dealerLogin.html">Login as Dealer here</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
